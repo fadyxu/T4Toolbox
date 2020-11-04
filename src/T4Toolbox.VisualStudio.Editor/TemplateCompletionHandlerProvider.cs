@@ -28,9 +28,9 @@ namespace T4Toolbox.VisualStudio.Editor
 
         [ImportingConstructor]
         public TemplateCompletionHandlerProvider(
-            ITemplateEditorOptions options, 
+            ITemplateEditorOptions options,
             IVsEditorAdaptersFactoryService editorAdapterFactory,
-            SVsServiceProvider serviceProvider,
+        Microsoft.VisualStudio.Shell.SVsServiceProvider serviceProvider,
             ICompletionBroker completionBroker)
         {
             if (options == null)

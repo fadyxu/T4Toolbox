@@ -7,10 +7,13 @@ namespace T4Toolbox.VisualStudio.Editor
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
+    using System.Threading;
+    using System.Threading.Tasks;
     using Microsoft.VisualStudio.Language.Intellisense;
     using Microsoft.VisualStudio.Text;
 
-    internal sealed class TemplateQuickInfoSource : IQuickInfoSource
+    internal sealed class TemplateQuickInfoSource : IAsyncQuickInfoSource //IQuickInfoSource//,
+
     {
         private readonly TemplateAnalyzer analyzer;
 
@@ -20,7 +23,7 @@ namespace T4Toolbox.VisualStudio.Editor
             this.analyzer = TemplateAnalyzer.GetOrCreate(buffer);
         }
 
-        public void AugmentQuickInfoSession(IQuickInfoSession session, IList<object> quickInfoContent, out ITrackingSpan applicableToSpan)
+        public void AugmentQuickInfoSession(IAsyncQuickInfoSession session, IList<object> quickInfoContent, out ITrackingSpan applicableToSpan)
         {
             if (session == null)
             {
@@ -52,6 +55,11 @@ namespace T4Toolbox.VisualStudio.Editor
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        public Task<QuickInfoItem> GetQuickInfoItemAsync(IAsyncQuickInfoSession session, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
         }
     }
 }
