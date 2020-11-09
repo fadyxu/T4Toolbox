@@ -4,7 +4,7 @@ using System.Threading;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
-namespace T4Toolbox2019
+namespace VSIXProject2
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -24,13 +24,13 @@ namespace T4Toolbox2019
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [Guid(T4Toolbox2019Package.PackageGuidString)]
-    public sealed class T4Toolbox2019Package : AsyncPackage
+    [Guid(VSIXProject2Package.PackageGuidString)]
+    public sealed class VSIXProject2Package : AsyncPackage
     {
         /// <summary>
-        /// T4Toolbox2019Package GUID string.
+        /// VSIXProject2Package GUID string.
         /// </summary>
-        public const string PackageGuidString = "4f580f22-6efd-4d76-89ae-639e7a6df6b2";
+        public const string PackageGuidString = "df78f741-e4cc-4cbf-8b52-97cc0f92d8a3";
 
         #region Package Members
 

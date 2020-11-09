@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="T4Toolbox2019.5bac7341-7534-449a-86a8-e9fd8bcde4ea" Version="1.0" Language="en-US" Publisher="Company" />
-    <DisplayName>T4Toolbox2019</DisplayName>
+    <Identity Id="VSIXProject2.25b52d05-1842-4921-94dc-bf9e91e317bd" Version="1.0" Language="en-US" Publisher="Company" />
+    <DisplayName>VSIXProject2</DisplayName>
     <Description>Empty VSIX Project.</Description>
   </Metadata>
   <Installation>
